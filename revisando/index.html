@@ -6,22 +6,21 @@
     <title>Treinando</title>
     <style>
         body {
-            background-color: rgb(105, 105, 173);
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 2em;
+            font: 12px Arial;
         }
-
-        p {
-            color: rgb(255, 208, 0);
+        button {
+            font-size: 12pt; 
+            padding : 30px; 
         }
     </style>
 </head>
 <body>
+    <h1>Interagindo com um botão</h1>
+    <button onclick="clicou()">Clica em mim!</button>
     <script>
-        var nome = (window.prompt('Qual seu nome?'))
-        document.write(`<p>Olá <strong>${nome}!</strong> Seu nome tem ${nome.length} caractéres. </p>`)
-        document.write(`<p>Seu nome em maiúsculas é ${nome.toUpperCase()}.</p>`)
-        document.write(`<p>Seu nome em minúsculas é ${nome.toLowerCase()}.</p>`)
+        function clicou() {
+            window.alert('Você clicou no botão!')
+        }
     </script>
 </body>
 </html>
