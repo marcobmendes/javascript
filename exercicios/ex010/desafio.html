@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Nacionalidade!</title>
+    <style>
+        body {
+            font: normal 20px Arial;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+    <p><label for="país">Qual País você está vivendo: </label>
+    <input type="text" name="país" id="país">
+    <input type="button" value="Verificar" onclick="check()"></p>
+    <div id="res">
+
+    </div>
+
+    <script>
+        function check() {
+            var txtnc = window.document.querySelector('input#país')
+            var res = window.document.querySelector('div#res')
+            var nc = txtnc.value
+            res.innerHTML = `<p>Vivendo em ${nc}</p>`
+            if (nc == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro!</strong></p>` 
+            } else {
+                res.innerHTML += '<p>Você é <strong>Estrangeiro!</strong></p>'
+            }
+        }
+    </script>
+</body>
+</html>
