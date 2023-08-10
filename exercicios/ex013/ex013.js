@@ -12,11 +12,11 @@ var diaSem = agora.getDay()
 switch (diaSem) {
     case 0:
         console.log('Domingo')
-        break;
+        break
 
     case 1:
         console.log('Segunda')
-        break;
+        break
 
     case 2:
         console.log('Terça')
@@ -42,4 +42,3 @@ switch (diaSem) {
         console.log('[ERRO] Dia invalido!')
         break
 }
- 
