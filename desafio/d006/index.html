@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conversor de Temperatura</title>
+    <style>
+        body {
+            font: normal 18px Arial;
+        }
+
+        button {
+            padding: 20px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>Conversor de Temperaturas</h1> 
+    <button onclick="converter()"> Converter</button> 
+    <div id="res">clique no botão acima para iniciar.</div> 
+
+    <script>
+        function converter() {
+            var n = Number(prompt('Digite uma temperatura em Cº (Celsius)'))
+            var res = window.document.querySelector('div#res')
+            res.innerHTML = `<p>${(n + 273.15).toLocaleString('pt-BR')}ºK (Kelvin)</p>
+            <p>${((n * 9/5) + 32).toLocaleString('pt-BR')}ºF (Fahrenheit)</p>`
+        }
+    </script>
 </body>
 </html>
