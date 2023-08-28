@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercitando conhecimento</title>
+    <style>
+        body {
+            background-color: rgb(110, 110, 173);
+            color: aliceblue;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        div {
+            max-width: 550px;
+            margin: auto;
+        }
+
+        h1 {
+            border-style: solid;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Funcionário/Salário</h1>
+        <p id="msg"></p>
+    </div>
+
+    <script>
+        var nome = prompt('Nome do funcionário:')
+        var sal = Number(prompt('Salário:'))
+        let msg = document.getElementById('msg')
+        msg.innerHTML = `O funcionário ${nome} tem um salário de ${sal.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})}`
+    </script>
+</body>
+</html>
