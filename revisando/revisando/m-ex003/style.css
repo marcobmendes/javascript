@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+body {
+    background-color: rgb(1, 53, 1);
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+main {
+    max-width: 800px;
+    text-align: center;
+
+    left: 50%;
+    right: 50%;
+    position: relative;
+    transform: translate(-50%, 120%);
+}
+
+h1 {
+    border: solid;
+    padding-bottom: 0px;
+    margin-bottom: -3px;
+}
+
+div#quadro {
+    border: solid;
+    padding-bottom: 10px;
+    margin-bottom: -3px;
+    
+}
+
+p {
+    margin: 10px;
+}
+
+p#mais {
+    font-size: 30px;
+}
+
+input {
+    background-color: rgb(81, 134, 81);
+    color: whitesmoke;
+    text-align: center;
+    text-indent: 15px;
+}
+
+input#bs {
+    text-indent: 0px;
+}
+
+div#res {
+    font-size: 20px;
+    font-weight: bold;
+    border: solid;
+    padding: 5px;
+    
+}
