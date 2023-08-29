@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+    <style>
+        body {
+            background-color: rgb(1, 53, 1);
+            color: whitesmoke;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 18px;
+        }
+
+        main {
+            max-width: 800px;
+            text-align: center;
+
+            left: 50%;
+            right: 50%;
+            position: relative;
+            transform: translate(-50%, 100%);
+        }
+
+        h1 {
+            border: solid;
+            padding-bottom: 0px;
+            margin-bottom: -3px;
+        }
+
+        div#quadro {
+            border: solid;
+            padding-bottom: 10px;
+            margin-bottom: -3px;
+            
+        }
+
+        p {
+            margin: 10px;
+        }
+
+        p#mais {
+            font-size: 30px;
+        }
+
+        input {
+            background-color: rgb(81, 134, 81);
+            color: whitesmoke;
+            text-align: center;
+            text-indent: 15px;
+        }
+
+        input#bs {
+            text-indent: 0px;
+        }
+
+        div#res {
+            font-size: 20px;
+            font-weight: bold;
+            border: solid;
+            padding: 5px;
+            
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Somador</h1>
+
+        <div id="quadro">
+            <p><input type="number" name="n1" id="prin"></p>
+            <p id="mais">+</p>
+            <p><input type="number" name="n2" id="secn"></p>
+            <input type="button" value="Somar" onclick="somar()" id="bs">
+        </div>
+
+        <div id="res">Aguardando dados para a soma...</div>
+    </main>
+
+    <script>
+        function somar() {
+            var num1 = document.getElementById('prin')
+            var num2 = document.getElementById('secn')
+            var res = document.querySelector('div#res')
+            let n1 = Number(num1.value)
+            let n2 = Number(num2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma de ${n1} e ${n2} é igual a ${s}`
+        }
+    </script>
+</body>
+</html>
