@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mádia de nota</title>
+    <style>
+        body {
+            background-color: rgb(226, 226, 226);
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        main {
+            text-align: center;
+            position: relative;
+            max-width: 600px;
+            margin: auto;
+            margin-top: 35vh;
+            /* transform: translate(0% , 50%); */
+        }
+
+        h1, div#dados, div#res {
+            border: solid 1px;
+            margin-bottom: -1px;
+        }
+
+        div#dados {
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <main>
+        <h1>Média do Aluno</h1>
+
+        <div id="dados">
+            <p>Nota 1: <input type="number" name="nota1" id="nota1"></p>
+            <p>Nota 2: <input type="number" name="nota2" id="nota2"></p>
+            <input type="button" value="Mostrar média" onclick="mostrarm()">
+        </div>
+
+        <div id="res">agurdando dados...</div>
+    </main>
+
+    <script>
+        function mostrarm() {
+            var nota1 = document.getElementById('nota1')
+            var nota2 = document.getElementById('nota2')
+            let res = document.querySelector('div#res')
+            var n1 = Number.parseFloat(nota1.value)
+            var n2 = Number.parseFloat(nota2.value)
+            var m = (n1 + n2) / 2
+            res.innerHTML = `<p>A média entre ${n1} e ${n2} é igual a ${m.toFixed(1)}</p>`
+        }
+    </script>
+</body>
+</html>
