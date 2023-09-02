@@ -1,0 +1,1 @@
+Nesta aula foi usado apenas o Node.js
