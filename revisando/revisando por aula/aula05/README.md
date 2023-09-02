@@ -1,1 +1,1 @@
-Essa aula foi usado apenas o NODE.js e o Terminal do VSCode.
+Nesta aula foi usado apenas o NODE.js e o Terminal do VSCode.
