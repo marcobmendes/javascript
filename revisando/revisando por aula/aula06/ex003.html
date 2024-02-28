@@ -22,10 +22,13 @@
     <h1>Olá, mundo!</h1>
     <p>Já me livrei da maldição!</p>
     <script>
-        var n1 = Number(window.prompt('digite um número: '))
-        var n2 = Number(window.prompt('Digite outro número: '))
-        var s = n1 + n2
-        window.alert(`A soma entre ${n1} e ${n2} é igual a ${String(s)}`)
+        var n1 = Number(window.prompt('Digite um número.'))
+        var n2 = Number(window.prompt('Digite outro número.'))
+        var soma = n1 + n2
+        window.alert(`A soma dos números ${n1} e ${n2} é ${soma}!`)
+        // Usar Number.parseInt() para números inteiros
+        // Usar Number.parseFloat() para números Reais
+        // Para transformar use exemplo: ${String(s)}
     </script>
 </body>
 </html>
