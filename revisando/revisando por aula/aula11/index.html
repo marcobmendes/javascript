@@ -7,23 +7,25 @@
 </head>
 <body>
     <h1>Nacionalidade</h1>
-    De qual país você é:<input type="text" name="txtpaís" id="txtpaís">
-    <input type="button" value="Verificar" onclick="verificar()">
     
+    <p>
+    Qual é o seu país? <input type="text" id="txtn" name="txtn">
+    <input type="button" value="Verificar" onclick="Verificar()">
+    </p>
     <div id="res">
-
+        
     </div>
 
     <script>
-        function verificar() {
-            var txtpáis = document.querySelector("input#txtpaís")
-            res = window.document.querySelector('div#res')
-            var país = txtpaís.value
-            res.innerHTML = `<p>Você mora no <strong>${país}</strong></p>`
-            if (país == "Brasil" || país == "brasil") {
-                res.innerHTML = "<p>Você é Brasileiro!</p>"
-            }else {
-                res.innerHTML = "<p>Você é Estrangeiro!</p>"
+        function Verificar() {
+            var txtn = document.getElementById('txtn')
+            res = document.getElementById('res')
+            var páis = txtn.value
+
+            if (páis == 'Brasil' | páis == 'brasil') {
+                res.innerHTML = 'Você é Brasileiro!'
+            } else {
+                res.innerHTML = 'Você é Extrangeiro!'
             }
         }
     </script>
