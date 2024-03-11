@@ -9,30 +9,30 @@ var diaSem = agora.getDay()
     5 = Sexta
     6 = Sábado
 */
-
+console.log(diaSem)
 switch (diaSem) {
     case 0:
         console.log('Domingo')
         break;
     case 1:
         console.log('Segunda')
-        break;
+        break
     case 2:
         console.log('Terça')
-        break;
+        break
     case 3:
         console.log('Quarta')
-        break;
+        break
     case 4:
         console.log('Quinta')
-        break;
+        break
     case 5:
         console.log('Sexta')
-        break;
+        break
     case 6:
         console.log('Sabado')
-        break;
+        break
     default:
-        console.log('[ERRO] Dia inválido!')
+        console.log('[ERRO] Dia invalido!')
         break;
 }
