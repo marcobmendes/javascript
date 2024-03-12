@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body {
+    background: rgb(70, 142, 236);
+    font: normal 14pt Arial;
+}
+
+header {
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.39);
+}
+
+section {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+}
+
+footer {
+    color: white;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.753);
+}
+
+footer a {
+    font-style: italic;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(218, 217, 217);
+    text-shadow: 2px 2px 4px rgba(143, 143, 143, 0.692);
+    text-decoration: underline;
+}
+
+a:visited {
+    color: white;
+}
