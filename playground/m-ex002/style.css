@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+body {
+    font: normal 20px Arial;
+    background-color: rgb(110, 110, 173);
+    color: aliceblue;
+    text-align: center;
+    margin: 8px;
+}
+
+div {
+    max-width: 550px;
+    margin: auto;
+}
+
+h1 {
+    border-style: solid;
+    margin: auto;
+}
