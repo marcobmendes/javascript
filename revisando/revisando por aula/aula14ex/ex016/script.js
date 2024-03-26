@@ -5,7 +5,7 @@ function contar() {
     let res = document.querySelector('div#res')
 
     res.innerHTML = ""
-    if (passo.value.lenght == 0 || n1.value.lenght == 0 || n2.value.lenght == 0) {
+    if (passo.value.length == 0 || n1.value.length == 0 || n2.value.length == 0) {
         res.innerText = 'Imposspossível contar!'
     } else {
         res.innerHTML = 'Contando: <br>'
